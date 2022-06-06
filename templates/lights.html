@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+	</head>
+	<body style="background-color:powderblue;">
+		<img src="https://previews.123rf.com/images/millaf/millaf1906/millaf190600155/124894205-amazing-sky-clouds-background-beautiful-clouds-on-sky.jpg" alt="weather" style="width:25%" class="center"> 
+		<div class="card">
+		<div class="container center">
+			<h1>Whether Weather</h1>
+			<p> Configure your LED Lights to tell you what the weather is like!</p>
+		<form action = "#" method="post">
+			<div id="mainselection">
+				<select name = "temp">
+					<option selected>Select Temperature Range to Configure</option>
+					{% for t in tr %}
+					<option value="{{ t }}"> {{ t }} </option>
+					{% endfor %}
+				</select>
+			</div>
+			<div id="mainselection2">
+				<select name = "led">
+					<option selected>LED LIGHTS</option>
+					{% for i in range(6) %}
+					<option value="{{ i }}"> {{ lr[i] }} </option>
+					{% endfor %}
+				</select>
+			</div>
+			<button class = "button execute" name = "confirm2" value="submit">Confirm LED</button>
+		</form>
+		</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="weather">
+	<meta name="keywords" content = "weather">
+	<meta name="author" content="Coery Tan">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/62dc684005.js" crossorigin="anonymous"></script>
+	  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+
+	<title>WhetherWeather</title>
+
+</head>
+<body>
+	<header class="header sticky-top mb-3">
+	<nav class="navbar navbar-expand-lg navbar-warning bg-dark shadow-lg p-0">
+		<h1 class="navbar-brand ml-3 mt-2 p-0"><strong class="title">Reddit Crawl</strong></h1> 
+					     		<!--replace i with tree-->
+     		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+			      	<a class="nav-link" href="/home">Home</a>
+			 </li>
+			<li class="nav-item">																									  		         <a class="nav-link" href="/about">About</a>																						                </li>
+			<li class="nav-item dropdown">																							  			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+		            <div class="dropdown-menu" aria-labelledby="navbarDropdown">																					          <a class="dropdown-item" href="#">Action</a>																							             <a class="dropdown-item" href="#">Another action</a>																           		  			          <div class="dropdown-divider"></div>
+	                      <a class="dropdown-item" href="#">Log out</a>
+		            </div>																												      </li>																										      	   		</ul>																										  		</nav>	
+	    </header>
+																														        <main>   																													<div class="container">																							         				<div class="card text-center border-0 my-5 shadow-lg">																						 	<div class="mt-5 card-body p-5">
+		<div class="col text-center justify-content-center align-self-center">																							<h1 class="text">WEATHER</h1>																										    <form method ="post" action="{{ url_for('search') }}" id="search_form" name="search_form">
+				<div class="input-group">
+				<input type="text" name = "subreddit" size="10" value="" placeholder="Subreddit" aria-describedby="button-addon1" class="form-control border-5">
+				<div class="input-group-append">																										<button id="button-addon1" type="submit" value="" class="btn btn-outline-dark">																	          		<i class="fas fa-search"></i>																								              </button>																																																								            </div>
+		</div>
+			</form>																												    </div>																													</div>														   															    </div>																												    	</div>																													</main>												
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+																																    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+															  																        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.blocktext {
+	margin-left: auto;
+	margin-right: auto;
+	width: 20 em;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.center {
+	border: 5px solid #FFFF00;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.container{
+	min-height: 30em;
+	padding: 2px 16px;
+	vertical-align: middle;
+}
